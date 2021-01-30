@@ -53,6 +53,8 @@ for link in products_links:
             'image': image
         }
 
+
+
         for item in soup.find_all('p'):
             value = item.get_text().strip().replace("\n", "")
             #print(value)
